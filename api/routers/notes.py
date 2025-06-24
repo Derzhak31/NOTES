@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from core import db_helper
 from api import crud
-from api.schemas import Note, NoteCreate, NoteUpdate
+from api.schemas.notes import Note, NoteCreate, NoteUpdate
 from api.dependencies import note_by_id
 
 

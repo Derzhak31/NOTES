@@ -2,8 +2,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from sqlalchemy.engine import Result
 
-from api.schemas import NoteCreate, NoteUpdate
-from api.db import Note
+from api.schemas.notes import NoteCreate, NoteUpdate
+from api.models import Note
 
 
 async def get_notes(session: AsyncSession) -> list[Note]:

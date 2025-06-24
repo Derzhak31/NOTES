@@ -1,4 +1,5 @@
 from sqlalchemy.orm import Mapped
+
 from core import Base
 
 
